@@ -1,0 +1,68 @@
+[versions]
+agp = "9.4.1"
+appcompat = "1.8.0"
+material = "1.13.0"
+activity = "1.10.1"
+constraintlayout = "2.2.2"
+lifecycle = "2.10.0"
+navigation = "2.9.8"
+retrofit = "2.11.0"
+rxjava = "2.2.21"
+rxandroid = "2.1.1"
+glide = "4.16.0"
+palette = "1.0.0"
+dagger = "2.59.2"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+testRunner = "1.6.2"
+mockito = "5.20.0"
+archCore = "2.2.0"
+fragment = "1.9.1"
+swiperefreshlayout = "1.2.0"
+recyclerview = "1.4.0"
+
+[libraries]
+# Java / XML UI
+activity = { module = "androidx.activity:activity", version.ref = "activity" }
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefreshlayout" }
+lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "lifecycle" }
+lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata", version.ref = "lifecycle" }
+lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime", version.ref = "lifecycle" }
+navigation-fragment = { module = "androidx.navigation:navigation-fragment", version.ref = "navigation" }
+navigation-ui = { module = "androidx.navigation:navigation-ui", version.ref = "navigation" }
+
+# Networking (RxJava 2 for compatibility with the course)
+retrofit-core = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+retrofit-adapter-rxjava2 = { module = "com.squareup.retrofit2:adapter-rxjava2", version.ref = "retrofit" }
+rxjava = { module = "io.reactivex.rxjava2:rxjava", version.ref = "rxjava" }
+rxandroid = { module = "io.reactivex.rxjava2:rxandroid", version.ref = "rxandroid" }
+
+# Images and colors
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide-compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+palette = { module = "androidx.palette:palette", version.ref = "palette" }
+
+# Dependency injection
+dagger-core = { module = "com.google.dagger:dagger", version.ref = "dagger" }
+dagger-android-support = { module = "com.google.dagger:dagger-android-support", version.ref = "dagger" }
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
+dagger-android-processor = { module = "com.google.dagger:dagger-android-processor", version.ref = "dagger" }
+
+# Tests
+junit = { module = "junit:junit", version.ref = "junit" }
+ext-junit = { module = "androidx.test.ext:junit", version.ref = "junitVersion" }
+espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCore" }
+test-runner = { module = "androidx.test:runner", version.ref = "testRunner" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+arch-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "archCore" }
+fragment = { group = "androidx.fragment", name = "fragment", version.ref = "fragment" }
+recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+navigation-safeargs = { id = "androidx.navigation.safeargs", version.ref = "navigation" }
